@@ -36,3 +36,19 @@ class InitOrderDemo(person: Person) {
         println("Second initializer block that prints ${person.name.length}")
     }
 }
+
+// width and height are plain constructor parameters
+class RectangleWithParameters(width: Int, height: Int) {
+    val perimeter = 2 * width + 2 * height
+
+    init {
+        println("Rectangle created with width = $width and height = $height")
+    }
+}
+
+class Constructors(val name: String) {
+    init {
+        println("Init block")
+    }
+
+}
